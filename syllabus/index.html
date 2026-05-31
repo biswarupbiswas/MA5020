@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#computational-methods-for-fluid-flow" class="md-skip">
+        <a href="#computational-methods-for-fluid-flow-ma5020" class="md-skip">
           Skip to content
         </a>
       
@@ -317,10 +317,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-1-introduction-to-fluid-dynamics-and-computation" class="md-nav__link">
+  <a href="#module-1-governing-equations-of-fluid-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Module 1: Introduction to Fluid Dynamics and Computation
+        Module 1: Governing Equations of Fluid Flow
       
     </span>
   </a>
@@ -350,10 +350,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#module-4-numerical-solution-of-navier-stokes-equations" class="md-nav__link">
+  <a href="#module-4-high-resolution-methods-for-conservation-laws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Module 4: Numerical Solution of Navier-Stokes Equations
+        Module 4: High-Resolution Methods for Conservation Laws
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-5-systems-of-conservation-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Module 5: Systems of Conservation Laws
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-6-numerical-methods-for-the-euler-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Module 6: Numerical Methods for the Euler Equations
       
     </span>
   </a>
@@ -563,10 +585,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-1-introduction-to-fluid-dynamics-and-computation" class="md-nav__link">
+  <a href="#module-1-governing-equations-of-fluid-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Module 1: Introduction to Fluid Dynamics and Computation
+        Module 1: Governing Equations of Fluid Flow
       
     </span>
   </a>
@@ -596,10 +618,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#module-4-numerical-solution-of-navier-stokes-equations" class="md-nav__link">
+  <a href="#module-4-high-resolution-methods-for-conservation-laws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Module 4: Numerical Solution of Navier-Stokes Equations
+        Module 4: High-Resolution Methods for Conservation Laws
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-5-systems-of-conservation-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Module 5: Systems of Conservation Laws
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-6-numerical-methods-for-the-euler-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Module 6: Numerical Methods for the Euler Equations
       
     </span>
   </a>
@@ -626,31 +670,83 @@
   
 
 
-<h1 id="computational-methods-for-fluid-flow">Computational Methods for Fluid Flow</h1>
-<h2 id="module-1-introduction-to-fluid-dynamics-and-computation">Module 1: Introduction to Fluid Dynamics and Computation</h2>
+<h1 id="computational-methods-for-fluid-flow-ma5020">Computational Methods for Fluid Flow (MA5020)</h1>
+<h2 id="module-1-governing-equations-of-fluid-flow">Module 1: Governing Equations of Fluid Flow</h2>
 <ul>
-<li>Governing equations of fluid flow</li>
-<li>Classification of PDEs</li>
-<li>Overview of numerical methods</li>
+<li>Conservation laws</li>
+<li>Continuity equation</li>
+<li>Euler equations</li>
+<li>Navier–Stokes equations</li>
+<li>Classification of PDEs in fluid dynamics</li>
+<li>Characteristics and wave propagation</li>
+<li>Non-dimensionalization</li>
+<li>Reynolds and Mach numbers</li>
 </ul>
 <h2 id="module-2-finite-difference-methods">Module 2: Finite Difference Methods</h2>
 <ul>
 <li>Taylor series expansion</li>
 <li>Consistency, Stability, and Convergence</li>
-<li>Applications to heat equation and wave equation</li>
+<li>Von Neumann stability analysis</li>
+<li>Upwind schemes</li>
+<li>Lax–Friedrichs scheme</li>
+<li>Lax–Wendroff scheme</li>
+<li>Applications to advection and diffusion equations</li>
 </ul>
 <h2 id="module-3-finite-volume-methods">Module 3: Finite Volume Methods</h2>
 <ul>
 <li>Integral form of conservation laws</li>
-<li>Discretization of the diffusion term</li>
-<li>Discretization of the convection term</li>
-</ul>
-<h2 id="module-4-numerical-solution-of-navier-stokes-equations">Module 4: Numerical Solution of Navier-Stokes Equations</h2>
-<ul>
-<li>Pressure-velocity coupling</li>
-<li>SIMPLE algorithm</li>
+<li>Control volume formulation</li>
+<li>Numerical fluxes</li>
+<li>Discretization of convection and diffusion terms</li>
+<li>Godunov's method</li>
 <li>Boundary conditions</li>
+<li>MUSCL reconstruction</li>
 </ul>
+<h2 id="module-4-high-resolution-methods-for-conservation-laws">Module 4: High-Resolution Methods for Conservation Laws</h2>
+<ul>
+<li>Total Variation Diminishing (TVD) schemes</li>
+<li>Flux limiters</li>
+<li>SSP Runge–Kutta methods</li>
+<li>ENO schemes</li>
+<li>WENO schemes</li>
+<li>Numerical treatment of shocks and discontinuities</li>
+</ul>
+<h2 id="module-5-systems-of-conservation-laws">Module 5: Systems of Conservation Laws</h2>
+<ul>
+<li>Review of scalar conservation laws</li>
+<li>Systems of conservation laws</li>
+<li>Jacobian matrix and characteristic structure</li>
+<li>Eigenvalues and eigenvectors</li>
+<li>Characteristic decomposition</li>
+<li>Linearized Riemann problems</li>
+<li>Hyperbolicity</li>
+<li>Numerical fluxes for systems</li>
+</ul>
+<h2 id="module-6-numerical-methods-for-the-euler-equations">Module 6: Numerical Methods for the Euler Equations</h2>
+<ul>
+<li>One-dimensional Euler equations</li>
+<li>Conservative variables and flux functions</li>
+<li>
+<p>Approximate Riemann solvers</p>
+</li>
+<li>
+<p>Roe solver</p>
+</li>
+<li>HLL solver</li>
+<li>HLLC solver</li>
+<li>High-order finite volume methods for Euler equations</li>
+<li>Shock tube problems</li>
+<li>Two-dimensional extensions</li>
+<li>Selected applications in fluid dynamics</li>
+</ul>
+<h1 id="textbooks">Textbooks</h1>
+<ol>
+<li>Randall J. LeVeque, <em>Finite Volume Methods for Hyperbolic Problems</em>, Cambridge University Press.</li>
+<li>E. F. Toro, <em>Riemann Solvers and Numerical Methods for Fluid Dynamics</em>, Springer.</li>
+<li>John D. Anderson, <em>Computational Fluid Dynamics: The Basics with Applications</em>, McGraw-Hill.</li>
+<li>Charles Hirsch, <em>Numerical Computation of Internal and External Flows</em>, Volumes 1 &amp; 2.</li>
+<li>C. B. Laney, <em>Computational Gasdynamics</em>, Cambridge University Press.</li>
+</ol>
 
 
 
