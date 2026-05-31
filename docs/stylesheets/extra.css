@@ -1,0 +1,86 @@
+/* 1. Global Font Scaling - Back to standard readable sizes */
+:root {
+    --md-text-font-size: 0.85rem;      
+    --md-code-font-size: 0.8rem;
+}
+
+/* 2. Info Blocks (Admonitions) - Clean and compact */
+.md-typeset .admonition, 
+.md-typeset details {
+    font-size: 0.85rem;               
+    line-height: 1.5;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.md-typeset .admonition-title {
+    font-size: 0.9rem;               
+    font-weight: 700;
+}
+
+/* 3. Tables - Standard size with better spacing */
+.md-typeset table:not([class]) {
+    font-size: 0.85rem !important;    
+    display: table;
+    width: 100%;
+}
+
+.md-typeset th {
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color: rgba(63, 81, 181, 0.05); 
+    padding: 10px;
+}
+
+.md-typeset td {
+    padding: 12px 10px;
+    vertical-align: top;
+}
+
+/* 4. The "Topic" Style - Bold but not huge */
+.md-typeset td strong {
+    font-size: 0.95rem; 
+    color: var(--md-primary-fg-color);
+}
+
+/* 5. Sub-text (small tag) */
+.md-typeset small {
+    font-size: 0.75rem;              
+    color: #666;
+    display: block;
+    margin-top: 2px;
+}
+
+/* 6. Home page announcements heading
+.announcements-title,
+.md-typeset .announcements-title {
+    color: #c62828 !important;
+    font-weight: 800;
+} */
+
+.update-badge,
+.md-typeset .update-badge {
+    display: inline-block;
+    margin-left: 0.45rem;
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.65em;
+    font-weight: 700;
+    color: #ffffff !important;
+    background: #d32f2f !important;
+    vertical-align: middle;
+    animation: update-blink 1.2s ease-in-out infinite;
+    -webkit-animation: update-blink 1.2s ease-in-out infinite;
+}
+
+@keyframes update-blink {
+    0%,
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.55);
+    }
+    50% {
+        opacity: 0.35;
+        box-shadow: 0 0 0 8px rgba(211, 47, 47, 0);
+    }
+}
