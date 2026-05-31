@@ -3,3 +3,5 @@ site/
 *.pyc
 __pycache__/
 .DS_Store
+Reading/
+latex_source/
