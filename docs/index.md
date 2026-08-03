@@ -1,7 +1,7 @@
 # MA4110/MA5020 – Computational Methods for Fluid Flow
 ## 📢 Announcements <span class="update-badge">New updates</span>
-- **Lecture**: The course will be starting from 07-08-2026. Have you registered for the course yet? Check the [syllabus](./syllabus.md) and decide if this course is the right fit for you!
-- **Time and Venue**: The exact time and venue for the lectures will be announced once the university finalizes the schedule. Stay tuned for updates!
+- **Lecture**: The first lecture will be held on 06-08-2026 at 8:25 AM in ELT7. Please be on time.
+- **Audits**: Students (Ph.D. or BTech) auditing the course are welcome to attend lectures but will not receive grades or credits.
 ---
 
 ## ℹ️ Course Information
@@ -13,9 +13,18 @@
 
 | Session Type | Day | Time | Venue |
 | :--- | :--- | :--- | :--- |
-| **Lecture** | TBD | TBD | TBD |
-| **Lecture** | TBD | TBD | TBD |
-| **Lecture** | TBD | TBD | TBD |
+| **Lecture** | Wednesday | 8:25 AM | ELT7 |
+| **Lecture** | Wednesday | 9:25 AM | ELT7 |
+| **Lecture** | Thursday | 8:25 AM | ELT7 |
+
+---
+### 📝 Evaluation Scheme
+| Component | Weightage |
+| :--- | :--- |
+| **Assignments** | 20% |
+| **Minor I Exam** | 20% |
+| **Minor II Exam** | 20% |
+| **Final Exam** | 40% |
 
 ---
 ## 🎯 About the Course
