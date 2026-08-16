@@ -2,7 +2,7 @@
 
 | No | Release Date | Topic | Download |
 | :--- | :--- | :--- | :--- |
-| 1 | TBD | **PDE Classification** | [Tutorial Sheet 1]() |
+| 1 | 20-08-2026 | **PDE Classification & Characteristics** | [Tutorial Sheet 1]() |
 
 ---
 

@@ -1,5 +1,5 @@
 # Assignments
 
-| No | Date | Topic | Assignment |
+| No | Release Date | Topic | Assignment |
 | :--- | :--- | :--- | :--- |
-| **01** | TBD | **To be announced** | [Assignment 1]() |
+| **01** | Upcoming | **To be announced** | [Assignment 1]() |
