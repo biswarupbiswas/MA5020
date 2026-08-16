@@ -1,6 +1,6 @@
 # MA4110/MA5020 – Computational Methods for Fluid Flow
 ## 📢 Announcements <span class="update-badge">New updates</span>
-- 🚨 **Assignment Alert**: **Programming Assignment 1 (Method of Characteristics in Julia)** has been released in [Lecture 5 Notes](pdfs/lecture05.pdf). Please complete the analytical calculations, implement the Julia code, and prepare your submission.
+- 🚨 **Lecture 5 Practice Task**: A programming task on the **Method of Characteristics in Julia** has been posted in [Lecture 5 Notes](pdfs/lecture05.pdf). Students are encouraged to implement the code.
 - **Lecture**: The first lecture will be held on 06-08-2026 at 8:25 AM in ELT7. Please be on time.
 - **Audits**: Students (Ph.D. or BTech) auditing the course are welcome to attend lectures but will not receive grades or credits.
 ---
