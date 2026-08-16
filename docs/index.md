@@ -1,8 +1,8 @@
 # MA4110/MA5020 – Computational Methods for Fluid Flow
 ## 📢 Announcements <span class="update-badge">New updates</span>
-- 🚨 **Lecture 5 Practice Task**: A programming task on the **Method of Characteristics in Julia** has been posted in [Lecture 5 Notes](pdfs/lecture05.pdf). Students are encouraged to implement the code.
-- **Lecture**: The first lecture will be held on 06-08-2026 at 8:25 AM in ELT7. Please be on time.
-- **Audits**: Students (Ph.D. or BTech) auditing the course are welcome to attend lectures but will not receive grades or credits.
+- **Aug 19, 2026**: [Lecture 4](pdfs/lecture04.pdf) (Linear Characteristics) and [Lecture 5](pdfs/lecture05.pdf) (Non-linear Characteristics & Julia Code) notes have been uploaded.
+- **Aug 13, 2026**: [Lecture 3](pdfs/lecture03.pdf) (Classification of PDEs) notes have been uploaded.
+- **Aug 12, 2026**: [Lecture 1](pdfs/lecture01.pdf) (Continuity Equation) and [Lecture 2](pdfs/lecture02.pdf) (Euler & Navier-Stokes) notes have been uploaded.
 ---
 
 ## ℹ️ Course Information
