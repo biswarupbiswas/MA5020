@@ -29,6 +29,7 @@ nav:
   - Tutorials: tutorials.md
   - Assignments: assignments.md
   - Codes: codes.md
+  - Julia Guide: julia.md
       
 markdown_extensions:
   - admonition

@@ -2,6 +2,8 @@
 
 This page provides standalone code implementations for the computational methods and solution techniques discussed in the lectures. Reference codes are provided preferably in **Julia** (students are free to implement their solutions in Python, MATLAB, C++, or their preferred language). Students can download, run, and modify these scripts locally.
 
+> ⚡ **New to Julia?** Check out our quick 10-minute [Julia Guide for Computational Methods](julia.md).
+
 ---
 
 ## 🚀 Code Repository
