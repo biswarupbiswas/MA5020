@@ -30,7 +30,6 @@ nav:
   - Assignments: assignments.md
   - Codes: codes.md
   - Julia Guide: julia.md
-  - "🌐 Main Website": https://biswarupbiswas.github.io/
       
 markdown_extensions:
   - admonition
@@ -50,12 +49,15 @@ extra_javascript:
 
 extra:
   social:
-    - icon: fontawesome/solid/globe
+    - icon: fontawesome/solid/user
       link: https://biswarupbiswas.github.io/
-      name: Instructor's Homepage
+      name: Biswarup Biswas
     - icon: fontawesome/brands/github
       link: https://github.com/biswarupbiswas
+      name: GitHub
     - icon: fontawesome/solid/envelope
       link: mailto:biswarup.biswas@mahindrauniversity.edu.in
+      name: Email
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/dr-biswarup-biswas
+      name: LinkedIn
