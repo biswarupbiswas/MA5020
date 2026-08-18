@@ -3,7 +3,7 @@ site_url: https://biswarupbiswas.github.io/MA5020
 
 repo_url: https://github.com/biswarupbiswas/MA5020
 
-copyright: Copyright &copy; 2026 Biswarup Biswas
+copyright: 'Copyright &copy; 2026 <a href="https://biswarupbiswas.github.io/" target="_blank" rel="noopener noreferrer" style="font-weight: 600; text-decoration: underline;">Biswarup Biswas</a>'
 
 theme:
   name: material
@@ -30,6 +30,7 @@ nav:
   - Assignments: assignments.md
   - Codes: codes.md
   - Julia Guide: julia.md
+  - "🌐 Main Website": https://biswarupbiswas.github.io/
       
 markdown_extensions:
   - admonition
@@ -48,6 +49,9 @@ extra_javascript:
 
 extra:
   social:
+    - icon: fontawesome/solid/globe
+      link: https://biswarupbiswas.github.io/
+      name: Instructor's Homepage
     - icon: fontawesome/brands/github
       link: https://github.com/biswarupbiswas
     - icon: fontawesome/solid/envelope
