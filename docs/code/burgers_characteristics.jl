@@ -1,7 +1,9 @@
 # ====================================================================
 # Solving Burgers' Equation with u0(x) = exp(-x^2) up to t <= t_s
-# Method of Characteristics Solver
+# Method of Characteristics with Live Running Plot
 # ====================================================================
+
+using Plots
 
 # 1. Define initial condition and its derivative
 u0(x) = exp(-x^2)
@@ -45,18 +47,36 @@ function solve_burgers(x_grid, t)
     return u_sol
 end
 
-# Main execution:
-function main()
+# 5. Live Running Plot Simulation
+function run_simulation()
     t_s = compute_breaking_time()
     println("Analytical Breaking Time t_s = ", round(t_s, digits=4))
+    println("Running live animation of wave steepening up to t <= t_s...")
 
-    # Evaluate profile at t = 0, t = 0.5*t_s, and t = 0.99*t_s
-    for t_val in [0.0, 0.5 * t_s, 0.99 * t_s]
-        u_vals = solve_burgers([0.0, 1.0, 2.0], t_val)
-        println("t = $(round(t_val, digits=3)): u(0.0) = $(round(u_vals[1], digits=4)), u(1.0) = $(round(u_vals[2], digits=4)), u(2.0) = $(round(u_vals[3], digits=4))")
+    x_grid = range(-3.0, 4.0, length=300)
+    time_steps = range(0.0, 0.99 * t_s, length=60)
+
+    for t in time_steps
+        u_current = solve_burgers(x_grid, t)
+        
+        p = plot(x_grid, u_current,
+                 lw=2.5,
+                 color=:darkblue,
+                 xlims=(-3.0, 4.0),
+                 ylims=(-0.1, 1.2),
+                 xlabel="Spatial Coordinate x",
+                 ylabel="Solution u(x,t)",
+                 title="Burgers Equation Steepening (t = $(round(t, digits=3)), t_s = $(round(t_s, digits=3)))",
+                 legend=false,
+                 grid=true)
+        
+        display(p)
+        sleep(0.03)  # Pause for animation effect
     end
+
+    println("Simulation finished.")
 end
 
 if abspath(PROGRAM_FILE) == @__FILE__
-    main()
+    run_simulation()
 end

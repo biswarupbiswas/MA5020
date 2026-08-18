@@ -19,9 +19,15 @@ This page provides standalone code implementations for the computational methods
 
 ### Julia Scripts
 To execute any of the Julia programs:
-1. Make sure [Julia](https://julialang.org/downloads/) (version 1.6 or newer) is installed.
-2. Open your terminal in the directory containing the downloaded file and run:
+1. Make sure [Julia](https://julialang.org/downloads/) is installed.
+2. Install the `Plots` package (run once in Julia):
+   ```julia
+   using Pkg; Pkg.add("Plots")
+   ```
+3. Run the script directly from your terminal to view the live animated plot:
    ```bash
+   julia linear_advection_characteristics.jl
+   # or
    julia burgers_characteristics.jl
    ```
-3. No external third-party packages are required for these core solvers.
+   A dynamic plot window will open and animate the wave propagation / steepening in real time.
