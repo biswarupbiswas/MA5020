@@ -130,10 +130,10 @@ end
 
 ### Conditional Statements
 ```julia
-if u_L >= u_R
-    s = (u_L + u_R) / 2.0      # Shock speed
+if x > 0.0
+    u = 1.0
 else
-    s = 0.0                    # Rarefaction
+    u = 0.0
 end
 ```
 
@@ -144,48 +144,63 @@ end
 | Task | Julia Syntax | Example |
 | :--- | :--- | :--- |
 | Minimum value | `minimum(u)` | `min_val = minimum(u)` |
-| Maximum value | `maximum(u)` | `max_speed = maximum(abs.(u))` |
+| Maximum value | `maximum(u)` | `max_val = maximum(abs.(u))` |
 | Array length | `length(u)` | `N = length(x)` |
 | Round numbers | `round(val, digits=4)` | `round(pi, digits=3) # 3.142` |
 | Absolute value | `abs(x)` or `abs.(u)` | `abs.([-1.0, 2.0])` |
 
 ---
 
-## 7. A Complete Numerical Example: Linear Advection
+## 7. Numerical Methods Examples
 
-Here is a self-contained 15-line solver for the linear advection equation $u_t + a u_x = 0$ using the first-order upwind scheme:
+### Example 1: Root Finding via the Bisection Method
+Finding the root of a non-linear equation $g(x) = 0$ on an interval $[a, b]$:
 
 ```julia
-# File: advection_upwind.jl
-function solve_advection(; a=1.0, N=100, cfl=0.8, t_final=1.0)
-    # Spatial grid
-    x = range(0.0, 2.0, length=N)
-    dx = x[2] - x[1]
-    
-    # Initial condition: Gaussian pulse
-    u = [exp(-50.0 * (xi - 0.5)^2) for xi in x]
-    
-    dt = cfl * dx / a
-    t = 0.0
-    
-    # Time loop
-    while t < t_final
-        u_new = copy(u)
-        for i in 2:N
-            # Upwind finite difference: u_i^(n+1) = u_i^n - a*(dt/dx)*(u_i^n - u_{i-1}^n)
-            u_new[i] = u[i] - (a * dt / dx) * (u[i] - u[i-1])
+# Define function: g(x) = x^3 - x - 2 = 0
+g(x) = x^3 - x - 2.0
+
+function bisection(g, a, b; tol=1e-6, max_iter=50)
+    for iter in 1:max_iter
+        c = (a + b) / 2.0
+        if abs(g(c)) < tol || (b - a) / 2.0 < tol
+            println("Converged: root = ", round(c, digits=5), " in $iter iterations")
+            return c
         end
-        u_new[1] = u_new[end]  # Periodic boundary
-        u = u_new
-        t += dt
+        if g(a) * g(c) < 0.0
+            b = c
+        else
+            a = c
+        end
     end
-    
-    println("Simulation completed at t = ", round(t, digits=3))
-    return x, u
+    return (a + b) / 2.0
 end
 
-# Run the solver
-x_grid, u_final = solve_advection()
+root = bisection(g, 1.0, 2.0)
+```
+
+### Example 2: Solving an Initial Value Problem (Forward Euler Method)
+Solving a first-order decay equation $\frac{dy}{dt} = -2y$ with $y(0) = 1.0$:
+
+```julia
+function solve_decay_ode()
+    dt = 0.05
+    t_grid = 0.0:dt:2.0
+    N = length(t_grid)
+    
+    y = zeros(N)
+    y[1] = 1.0  # Initial condition y(0) = 1.0
+    
+    for n in 1:N-1
+        # Forward Euler update: y_{n+1} = y_n + dt * f(t_n, y_n)
+        y[n+1] = y[n] + dt * (-2.0 * y[n])
+    end
+    
+    println("At t = 2.0: Numerical y = $(round(y[end], digits=4)), Exact y = $(round(exp(-4.0), digits=4))")
+    return t_grid, y
+end
+
+t_vals, y_vals = solve_decay_ode()
 ```
 
 ---
