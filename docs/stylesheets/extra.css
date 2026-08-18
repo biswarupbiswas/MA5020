@@ -1,86 +1,386 @@
-/* 1. Global Font Scaling - Back to standard readable sizes */
-:root {
-    --md-text-font-size: 0.85rem;      
-    --md-code-font-size: 0.8rem;
+/* ====================================================================
+   MA4110/MA5020 — Custom Academic Stylesheet
+   Matched to Parent Website (https://biswarupbiswas.github.io/)
+   ==================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ─── Light Scheme Tokens ─── */
+:root,
+[data-md-color-scheme="default"] {
+    --ink: #1c1a16;
+    --ink-light: #3a3630;
+    --ink-muted: #6b6459;
+    --parchment: #faf7f2;
+    --parchment-warm: #f5f0e8;
+    --parchment-deep: #ede8de;
+    --border: #d6cebc;
+    --border-light: #e8e2d6;
+    --accent: #8b2e1a;
+    --accent-warm: #a34828;
+    --accent-gold: #c8922a;
+    --accent-gold-light: #e8b84a;
+    --sidenote: #5a6e4a;
+    --link: #2a4a7a;
+    --link-hover: #8b2e1a;
+    --card: #fffdf9;
+    --card-hover: #fdf8f0;
+    --shadow: rgba(30, 20, 10, 0.08);
+
+    /* Material for MkDocs Variable Overrides */
+    --md-default-bg-color: var(--parchment);
+    --md-default-bg-color--light: var(--parchment-warm);
+    --md-default-bg-color--lighter: var(--parchment-deep);
+    --md-default-fg-color: var(--ink);
+    --md-default-fg-color--light: var(--ink-light);
+    --md-default-fg-color--lighter: var(--ink-muted);
+    --md-default-fg-color--lightest: var(--border);
+
+    --md-primary-fg-color: var(--accent);
+    --md-primary-fg-color--light: var(--accent-warm);
+    --md-primary-fg-color--dark: #6e2414;
+    --md-primary-bg-color: var(--parchment);
+    --md-primary-bg-color--light: rgba(250, 247, 242, 0.96);
+
+    --md-accent-fg-color: var(--accent-gold);
+    --md-typeset-color: var(--ink);
+    --md-typeset-a-color: var(--link);
+
+    --md-code-bg-color: var(--parchment-warm);
+    --md-code-fg-color: var(--ink);
+
+    --md-text-font: 'EB Garamond', Georgia, serif;
+    --md-code-font: 'JetBrains Mono', monospace;
+    --md-text-font-size: 1.05rem;
+    --md-code-font-size: 0.88rem;
 }
 
-/* 2. Info Blocks (Admonitions) - Clean and compact */
-.md-typeset .admonition, 
-.md-typeset details {
-    font-size: 0.85rem;               
-    line-height: 1.5;
-    margin-top: 1em;
-    margin-bottom: 1em;
+/* ─── Dark Scheme Tokens ─── */
+[data-md-color-scheme="slate"] {
+    --ink: #e8e2d4;
+    --ink-light: #c8c0b0;
+    --ink-muted: #8a8070;
+    --parchment: #171410;
+    --parchment-warm: #1e1a15;
+    --parchment-deep: #252018;
+    --border: #3a3228;
+    --border-light: #302a22;
+    --accent: #d4775a;
+    --accent-warm: #c4633e;
+    --accent-gold: #d4a44a;
+    --accent-gold-light: #e8c07a;
+    --sidenote: #7a9a5a;
+    --link: #6a9ad4;
+    --link-hover: #d4775a;
+    --card: #1e1a15;
+    --card-hover: #252018;
+    --shadow: rgba(0, 0, 0, 0.25);
+
+    /* Material Overrides */
+    --md-default-bg-color: var(--parchment);
+    --md-default-bg-color--light: var(--parchment-warm);
+    --md-default-bg-color--lighter: var(--parchment-deep);
+    --md-default-fg-color: var(--ink);
+    --md-default-fg-color--light: var(--ink-light);
+    --md-default-fg-color--lighter: var(--ink-muted);
+    --md-default-fg-color--lightest: var(--border);
+
+    --md-primary-fg-color: var(--accent);
+    --md-primary-fg-color--light: var(--accent-gold);
+    --md-primary-fg-color--dark: #a34828;
+    --md-primary-bg-color: var(--parchment);
+    --md-primary-bg-color--light: rgba(23, 20, 16, 0.96);
+
+    --md-accent-fg-color: var(--accent-gold);
+    --md-typeset-color: var(--ink);
+    --md-typeset-a-color: var(--link);
+
+    --md-code-bg-color: var(--parchment-warm);
+    --md-code-fg-color: var(--ink);
 }
 
-.md-typeset .admonition-title {
-    font-size: 0.9rem;               
-    font-weight: 700;
+/* ─── Global Body & Typography ─── */
+body {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink);
+    background-color: var(--parchment);
+    transition: background-color 0.4s, color 0.4s;
 }
 
-/* 3. Tables - Standard size with better spacing */
+/* Subtle texture overlay */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+/* ─── Header & Navigation Bar ─── */
+.md-header {
+    background-color: rgba(250, 247, 242, 0.96) !important;
+    border-bottom: 1px solid var(--border) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 4px var(--shadow) !important;
+    color: var(--ink) !important;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+    background-color: rgba(23, 20, 16, 0.96) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.md-header__title {
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-size: 1.35rem !important;
+    font-weight: 600 !important;
+    color: var(--accent) !important;
+    letter-spacing: 0.01em;
+}
+
+.md-header__topic {
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: var(--accent) !important;
+}
+
+.md-header__button {
+    color: var(--ink-light) !important;
+}
+
+.md-header__button:hover {
+    color: var(--accent) !important;
+}
+
+/* ─── Navigation Tabs & Sidebar ─── */
+.md-tabs {
+    background-color: var(--parchment-warm) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.md-tabs__link {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--ink-light) !important;
+    opacity: 0.85;
+    transition: color 0.25s, opacity 0.25s;
+}
+
+.md-tabs__link:hover,
+.md-tabs__item--active .md-tabs__link {
+    color: var(--accent) !important;
+    opacity: 1;
+}
+
+.md-nav__link {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 1.02rem;
+    color: var(--ink-light);
+}
+
+.md-nav__link:hover {
+    color: var(--accent) !important;
+}
+
+.md-nav__link--active {
+    font-weight: 600 !important;
+    color: var(--accent) !important;
+}
+
+/* ─── Headings ─── */
+.md-typeset h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.35rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.35rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.md-typeset h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.01em;
+    margin-top: 1.8rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 0.25rem;
+}
+
+.md-typeset h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink-light);
+    margin-top: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ─── Links ─── */
+.md-typeset a {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.25s ease;
+}
+
+.md-typeset a:hover {
+    color: var(--link-hover);
+}
+
+/* ─── Tables ─── */
 .md-typeset table:not([class]) {
-    font-size: 0.85rem !important;    
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.02rem !important;
     display: table;
     width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--card);
+    box-shadow: 0 2px 8px var(--shadow);
+    margin: 1.2rem 0;
 }
 
 .md-typeset th {
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 700;
-    font-size: 0.9rem;
-    background-color: rgba(63, 81, 181, 0.05); 
-    padding: 10px;
+    font-size: 1.15rem;
+    color: var(--ink);
+    background-color: var(--parchment-warm);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 14px;
+    text-align: left;
 }
 
 .md-typeset td {
-    padding: 12px 10px;
-    vertical-align: top;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--ink);
+    vertical-align: middle;
 }
 
-/* 4. The "Topic" Style - Bold but not huge */
+.md-typeset tr:last-child td {
+    border-bottom: none;
+}
+
+.md-typeset tr:hover td {
+    background-color: var(--card-hover);
+}
+
 .md-typeset td strong {
-    font-size: 0.95rem; 
-    color: var(--md-primary-fg-color);
+    font-size: 1.05rem;
+    color: var(--accent);
 }
 
-/* 5. Sub-text (small tag) */
-.md-typeset small {
-    font-size: 0.75rem;              
-    color: #666;
-    display: block;
-    margin-top: 2px;
+/* ─── Admonitions & Callouts ─── */
+.md-typeset .admonition,
+.md-typeset details {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    box-shadow: 0 2px 6px var(--shadow);
+    margin: 1.2rem 0;
 }
 
-/* 6. Home page announcements heading
-.announcements-title,
-.md-typeset .announcements-title {
-    color: #c62828 !important;
-    font-weight: 800;
-} */
+.md-typeset .admonition-title,
+.md-typeset summary {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--accent) !important;
+    background-color: var(--parchment-warm);
+    border-bottom: 1px solid var(--border-light);
+}
 
+/* ─── Code Blocks & Inlines ─── */
+.md-typeset code {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.85em;
+    background-color: var(--parchment-warm);
+    color: var(--accent);
+    border: 1px solid var(--border-light);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+}
+
+.md-typeset pre > code {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    color: var(--ink);
+    padding: 1em;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+/* ─── Update Badge (Announcements) ─── */
 .update-badge,
 .md-typeset .update-badge {
     display: inline-block;
-    margin-left: 0.45rem;
-    padding: 0.12rem 0.45rem;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.55rem;
     border-radius: 999px;
-    font-size: 0.65em;
-    font-weight: 700;
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.72em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     color: #ffffff !important;
-    background: #d32f2f !important;
+    background: var(--accent) !important;
     vertical-align: middle;
-    animation: update-blink 1.2s ease-in-out infinite;
-    -webkit-animation: update-blink 1.2s ease-in-out infinite;
+    animation: update-blink 1.5s ease-in-out infinite;
 }
 
 @keyframes update-blink {
-    0%,
-    100% {
+    0%, 100% {
         opacity: 1;
-        box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.55);
+        box-shadow: 0 0 0 0 rgba(139, 46, 26, 0.45);
     }
     50% {
-        opacity: 0.35;
-        box-shadow: 0 0 0 8px rgba(211, 47, 47, 0);
+        opacity: 0.45;
+        box-shadow: 0 0 0 7px rgba(139, 46, 26, 0);
     }
+}
+
+/* ─── Footer ─── */
+.md-footer {
+    background-color: var(--parchment-deep) !important;
+    border-top: 1px solid var(--border);
+    color: var(--ink-muted);
+}
+
+.md-footer-meta {
+    background-color: var(--parchment-deep) !important;
+}
+
+.md-copyright {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+}
+
+.md-social__link {
+    color: var(--ink-muted) !important;
+}
+
+.md-social__link:hover {
+    color: var(--accent) !important;
 }
