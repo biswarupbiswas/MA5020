@@ -1,6 +1,6 @@
 # 💻 Course Codes & Numerical Implementations
 
-This page provides standalone code implementations for the computational methods and solution techniques discussed in the lectures. Students can download, run, and modify these scripts locally.
+This page provides standalone code implementations for the computational methods and solution techniques discussed in the lectures. Reference codes are provided preferably in **Julia** (students are free to implement their solutions in Python, MATLAB, C++, or their preferred language). Students can download, run, and modify these scripts locally.
 
 ---
 
