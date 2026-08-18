@@ -21,9 +21,6 @@ theme:
 
 plugins:
   - search
-  - mkdocs-jupyter:
-      execute: false
-      include_source: true
 
 nav:
   - Home: index.md
@@ -31,8 +28,7 @@ nav:
   - Lectures: lectures.md
   - Tutorials: tutorials.md
   - Assignments: assignments.md
-  - Notebooks:
-      - Lab 1: notebooks/lab1.ipynb
+  - Codes: codes.md
       
 markdown_extensions:
   - admonition
