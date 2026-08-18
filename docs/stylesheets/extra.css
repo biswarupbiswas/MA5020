@@ -85,25 +85,21 @@
     }
 }
 
-/* ─── Header Logo Size Optimization ─── */
+/* ─── Header Logo Clean Fit ─── */
 .md-header .md-header__button.md-logo {
     padding: 0 !important;
-    margin: 0 0.6rem 0 0 !important;
-    height: 2.4rem !important;
-    width: auto !important;
+    margin: 0 0.5rem 0 0 !important;
+    height: 2.2rem !important;
     display: inline-flex !important;
     align-items: center !important;
 }
 
 .md-header .md-header__button.md-logo img,
 .md-header .md-header__button.md-logo svg {
-    height: 2.2rem !important;
+    height: 1.95rem !important;
     width: auto !important;
-    max-height: 44px !important;
-    min-height: 36px !important;
+    max-height: 38px !important;
     object-fit: contain !important;
-    transform: scale(1.35);
-    transform-origin: left center;
 }
 
 /* ─── Visitor & Online Counter ─── */
@@ -199,16 +195,18 @@
 /* ─── Intro Splash Screen / Preloader ─── */
 .site-splash {
     position: fixed;
-    inset: 0;
-    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
     background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
     user-select: none;
+    animation: splash-auto-dismiss 0.7s cubic-bezier(0.4, 0, 0.2, 1) 2.2s forwards;
+    pointer-events: all;
 }
 
 [data-md-color-scheme="slate"] .site-splash {
@@ -263,6 +261,25 @@
     animation: splash-spin 0.8s linear infinite;
 }
 
+@keyframes splash-auto-dismiss {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+    99% {
+        opacity: 0;
+        visibility: visible;
+        pointer-events: none;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        display: none;
+    }
+}
+
 @keyframes splash-pop {
     0% {
         opacity: 0;
@@ -287,4 +304,5 @@
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
+    display: none !important;
 }
