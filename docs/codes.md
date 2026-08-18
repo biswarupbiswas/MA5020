@@ -10,6 +10,7 @@ This page provides standalone code implementations for the computational methods
 
 | Topic / Method | Language | Associated Lecture | Source File |
 | :--- | :--- | :--- | :--- |
+| **Linear Advection Equation: Method of Characteristics** | Julia (`.jl`) | [Lecture 4](pdfs/lecture04.pdf) | [`linear_advection_characteristics.jl`](code/linear_advection_characteristics.jl) |
 | **Inviscid Burgers' Equation: Method of Characteristics** | Julia (`.jl`) | [Lecture 5](pdfs/lecture05.pdf) | [`burgers_characteristics.jl`](code/burgers_characteristics.jl) |
 
 ---
