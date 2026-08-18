@@ -86,19 +86,24 @@
 }
 
 /* ─── Header Logo Size Optimization ─── */
-.md-header__button.md-logo {
-    padding: 0 4px;
-    margin-right: 0.3rem;
-    display: flex;
-    align-items: center;
+.md-header .md-header__button.md-logo {
+    padding: 0 !important;
+    margin: 0 0.6rem 0 0 !important;
+    height: 2.4rem !important;
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
 }
 
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-    height: 2.15rem !important;
+.md-header .md-header__button.md-logo img,
+.md-header .md-header__button.md-logo svg {
+    height: 2.2rem !important;
     width: auto !important;
-    max-height: 42px !important;
-    object-fit: contain;
+    max-height: 44px !important;
+    min-height: 36px !important;
+    object-fit: contain !important;
+    transform: scale(1.35);
+    transform-origin: left center;
 }
 
 /* ─── Visitor & Online Counter ─── */
