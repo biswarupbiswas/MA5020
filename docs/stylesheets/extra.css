@@ -85,6 +85,22 @@
     }
 }
 
+/* ─── Header Logo Size Optimization ─── */
+.md-header__button.md-logo {
+    padding: 0 4px;
+    margin-right: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 2.15rem !important;
+    width: auto !important;
+    max-height: 42px !important;
+    object-fit: contain;
+}
+
 /* ─── Visitor & Online Counter ─── */
 .visitor-counter-group {
     display: flex;
