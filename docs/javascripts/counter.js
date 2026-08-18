@@ -51,13 +51,15 @@ function fetchTotalVisitors() {
 
 function initSplash() {
     const splash = document.getElementById('site-splash');
-    if (splash) {
+    if (splash && !splash.dataset.dismissed) {
+        splash.dataset.dismissed = "true";
+        // Give 2.2 seconds to comfortably view the logo, code, and title
         setTimeout(() => {
             splash.classList.add('fade-out');
             setTimeout(() => {
                 splash.remove();
-            }, 600);
-        }, 750);
+            }, 800);
+        }, 2200);
     }
 }
 
@@ -72,13 +74,5 @@ if (document.readyState === 'loading') {
 } else {
     initCounters();
 }
-
-window.addEventListener('load', () => {
-    const splash = document.getElementById('site-splash');
-    if (splash && !splash.classList.contains('fade-out')) {
-        splash.classList.add('fade-out');
-        setTimeout(() => splash.remove(), 600);
-    }
-});
 
 setInterval(fetchOnlineCount, 30000);
