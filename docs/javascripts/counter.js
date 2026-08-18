@@ -49,7 +49,20 @@ function fetchTotalVisitors() {
         .catch(() => {});
 }
 
+function initSplash() {
+    const splash = document.getElementById('site-splash');
+    if (splash) {
+        setTimeout(() => {
+            splash.classList.add('fade-out');
+            setTimeout(() => {
+                splash.remove();
+            }, 600);
+        }, 750);
+    }
+}
+
 function initCounters() {
+    initSplash();
     fetchOnlineCount();
     fetchTotalVisitors();
 }
@@ -59,5 +72,13 @@ if (document.readyState === 'loading') {
 } else {
     initCounters();
 }
+
+window.addEventListener('load', () => {
+    const splash = document.getElementById('site-splash');
+    if (splash && !splash.classList.contains('fade-out')) {
+        splash.classList.add('fade-out');
+        setTimeout(() => splash.remove(), 600);
+    }
+});
 
 setInterval(fetchOnlineCount, 30000);
