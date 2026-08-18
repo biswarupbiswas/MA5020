@@ -4,21 +4,14 @@
       {{ config.copyright }}
     </div>
   {% endif %}
-  <div class="visitor-counter-group">
-    <div class="visitor-counter" title="Total Site Visitors">
-      <span class="visitor-counter-icon">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-          <circle cx="12" cy="12" r="3"></circle>
-        </svg>
-      </span>
-      <span class="visitor-label">Visitors:</span>
-      <span id="totalVisitorCount" class="visitor-num">0</span>
-    </div>
-    <div class="online-counter" title="Currently Active Visitors">
-      <span class="pulse-dot"></span>
-      <span class="online-label">Online:</span>
-      <span id="onlineCount" class="online-num">1</span>
-    </div>
+  <div style="margin-top: 0.6em; display: flex; align-items: center; justify-content: flex-start; gap: 10px; flex-wrap: wrap;">
+    <!-- Live Online Visitors -->
+    <a href="https://whos.amung.us/stats/ma5020mu/" target="_blank" rel="noopener noreferrer" title="Live Online Visitors" style="display: inline-flex; align-items: center;">
+      <img src="https://whos.amung.us/widget/ma5020mu.png" alt="Live Online Users" style="vertical-align: middle; height: 20px; border-radius: 3px;" />
+    </a>
+    <!-- Total Visits Counter Badge -->
+    <a href="https://biswarupbiswas.github.io/MA5020/" title="Total Site Visits" style="display: inline-flex; align-items: center;">
+      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbiswarupbiswas.github.io%2FMA5020&count_bg=%23E64A19&title_bg=%23455A64&icon=&icon_color=%23E7E7E7&title=Total+Visits&edge_flat=false" alt="Total Visits" style="vertical-align: middle; height: 20px;" />
+    </a>
   </div>
 </div>
