@@ -34,22 +34,24 @@ function animateCountUp(element, target, duration = 800) {
     requestAnimationFrame(update);
 }
 
-// Total Visitor Counter (Actual/Original Count)
-window.BusuanziCallback = function(data) {
+// Total Visitor Counter (Isolated Key: biswarupbiswas_ma5020)
+function fetchTotalVisitors() {
     const totalEl = document.getElementById('totalVisitorCount');
     if (!totalEl) return;
-    const rawCount = (data && data.page_pv) ? Number(data.page_pv) : ((data && data.site_pv) ? Number(data.site_pv) : 0);
-    animateCountUp(totalEl, rawCount, 800);
-};
+
+    fetch('https://countapi.mileshilliard.com/api/v1/hit/biswarupbiswas_ma5020')
+        .then(res => res.json())
+        .then(data => {
+            if (data && typeof data.value === 'number') {
+                animateCountUp(totalEl, data.value, 800);
+            }
+        })
+        .catch(() => {});
+}
 
 function initCounters() {
     fetchOnlineCount();
-
-    // Load live Busuanzi count with cache-busting timestamp
-    const script = document.createElement('script');
-    script.src = '//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback&_=' + Date.now();
-    script.async = true;
-    document.body.appendChild(script);
+    fetchTotalVisitors();
 }
 
 if (document.readyState === 'loading') {
