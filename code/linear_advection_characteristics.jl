@@ -1,7 +1,9 @@
 # ====================================================================
 # Solving Linear Advection Equation: u_t + a*u_x = 0
-# Method of Characteristics Solver: u(x, t) = u0(x - a*t)
+# Method of Characteristics with Live Running Plot
 # ====================================================================
+
+using Plots
 
 # 1. Problem parameters
 const a = 1.5                                      # Constant wave speed
@@ -17,19 +19,35 @@ function solve_linear_advection(x_grid, t; speed=a)
     return u_sol
 end
 
-# Main execution:
-function main()
-    println("Linear Advection Wave Speed a = ", a)
-    
-    # Test evaluation at x = [0.5, 1.25, 2.0] at different times
-    x_test = [0.5, 1.25, 2.0]
-    
-    for t_val in [0.0, 0.5, 1.0]
-        u_vals = solve_linear_advection(x_test, t_val)
-        println("t = $(round(t_val, digits=2)): u(0.5) = $(round(u_vals[1], digits=4)), u(1.25) = $(round(u_vals[2], digits=4)), u(2.0) = $(round(u_vals[3], digits=4))")
+# 3. Live Running Plot Simulation
+function run_simulation()
+    x_grid = range(-1.0, 5.0, length=300)
+    t_final = 2.0
+    time_steps = range(0.0, t_final, length=60)
+
+    println("Running live animation: Linear Advection (a = $a)...")
+
+    for t in time_steps
+        u_current = solve_linear_advection(x_grid, t)
+        
+        p = plot(x_grid, u_current,
+                 lw=2.5,
+                 color=:crimson,
+                 xlims=(-1.0, 5.0),
+                 ylims=(-0.1, 1.2),
+                 xlabel="Spatial Coordinate x",
+                 ylabel="Solution u(x,t)",
+                 title="Linear Advection: u_t + 1.5 u_x = 0 (t = $(round(t, digits=2)))",
+                 legend=false,
+                 grid=true)
+        
+        display(p)
+        sleep(0.03)  # Pause for animation effect
     end
+    
+    println("Simulation finished.")
 end
 
 if abspath(PROGRAM_FILE) == @__FILE__
-    main()
+    run_simulation()
 end
