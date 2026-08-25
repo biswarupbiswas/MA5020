@@ -8,3 +8,4 @@
 | **03** | 13-08-2026 | **Classification of PDEs in Fluid Dynamics** | [Lecture 3 (PDF)](pdfs/lecture03.pdf) |
 | **04** | 19-08-2026 | **Method of Characteristics: Linear Problems** | [Lecture 4 (PDF)](pdfs/lecture04.pdf) |
 | **05** | 19-08-2026 | **Method of Characteristics: Non-linear Problems** | [Lecture 5 (PDF)](pdfs/lecture05.pdf) |
+| **06** | 26-08-2026 | **Finite Difference Methods: Foundations & Truncation Error** | [Lecture 6 (PDF)](pdfs/lecture06.pdf) |
