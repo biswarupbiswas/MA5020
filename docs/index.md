@@ -4,9 +4,12 @@
 - **Sep 02, 2026**: [Lecture 8](pdfs/lecture08.pdf) (Modified Equation Analysis: Dissipation & Dispersion) and [Lecture 9](pdfs/lecture09.pdf) (Conservative Difference Schemes, Lax-Wendroff Theorem & Method of Lines) notes have been uploaded.
 - **Aug 26, 2026**: [Lecture 6](pdfs/lecture06.pdf) (Finite Difference Foundations & Truncation Error) and [Lecture 7](pdfs/lecture07.pdf) (Von Neumann Stability Analysis & Classical Schemes) notes have been uploaded.
 - **Aug 20, 2026**: [Tutorial Sheet 1](pdfs/tutorial01.pdf) (PDE Classification, Method of Characteristics, and Breaking Time) has been uploaded.
-- **Aug 19, 2026**: [Lecture 4](pdfs/lecture04.pdf) (Linear Characteristics) and [Lecture 5](pdfs/lecture05.pdf) (Non-linear Characteristics & Weak Solutions) notes have been uploaded.
-- **Aug 13, 2026**: [Lecture 3](pdfs/lecture03.pdf) (Classification of PDEs) notes have been uploaded.
-- **Aug 12, 2026**: [Lecture 1](pdfs/lecture01.pdf) (Continuity Equation) and [Lecture 2](pdfs/lecture02.pdf) (Euler & Navier-Stokes) notes have been uploaded.
+
+??? note "Show more past announcements"
+    - **Aug 19, 2026**: [Lecture 4](pdfs/lecture04.pdf) (Linear Characteristics) and [Lecture 5](pdfs/lecture05.pdf) (Non-linear Characteristics & Weak Solutions) notes have been uploaded.
+    - **Aug 13, 2026**: [Lecture 3](pdfs/lecture03.pdf) (Classification of PDEs) notes have been uploaded.
+    - **Aug 12, 2026**: [Lecture 1](pdfs/lecture01.pdf) (Continuity Equation) and [Lecture 2](pdfs/lecture02.pdf) (Euler & Navier-Stokes) notes have been uploaded.
+
 ---
 
 ## ℹ️ Course Information
