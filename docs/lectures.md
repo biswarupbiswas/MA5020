@@ -10,3 +10,5 @@
 | **05** | 19-08-2026 | **Method of Characteristics: Non-linear Problems** | [Lecture 5 (PDF)](pdfs/lecture05.pdf) |
 | **06** | 26-08-2026 | **Finite Difference Methods: Foundations & Truncation Error** | [Lecture 6 (PDF)](pdfs/lecture06.pdf) |
 | **07** | 26-08-2026 | **Von Neumann Stability Analysis & Classical Schemes** | [Lecture 7 (PDF)](pdfs/lecture07.pdf) |
+| **08** | 02-09-2026 | **Modified Equation Analysis: Dissipation & Dispersion** | [Lecture 8 (PDF)](pdfs/lecture08.pdf) |
+| **09** | 02-09-2026 | **Parabolic Equations, Implicit Schemes & Grid Péclet Number** | [Lecture 9 (PDF)](pdfs/lecture09.pdf) |
