@@ -13,6 +13,8 @@ This page provides standalone code implementations for the computational methods
 | **Linear Advection Equation: Method of Characteristics** | Julia (`.jl`) | [Lecture 4](pdfs/lecture04.pdf) | [`linear_advection_characteristics.jl`](code/linear_advection_characteristics.jl) |
 | **Inviscid Burgers' Equation: Method of Characteristics** | Julia (`.jl`) | [Lecture 5](pdfs/lecture05.pdf) | [`burgers_characteristics.jl`](code/burgers_characteristics.jl) |
 | **Linear Advection Equation: First-Order Upwind Scheme** | Julia (`.jl`) | [Lecture 6](pdfs/lecture06.pdf) / [Lecture 7](pdfs/lecture07.pdf) | [`advection_upwind.jl`](code/advection_upwind.jl) |
+| **Linear Advection Equation: Lax-Wendroff Scheme (2nd-Order Central)** | Julia (`.jl`) | [Lecture 7](pdfs/lecture07.pdf) / [Lecture 8](pdfs/lecture08.pdf) | [`advection_lax_wendroff.jl`](code/advection_lax_wendroff.jl) |
+| **Linear Advection Equation: Beam-Warming Scheme (2nd-Order Upwind)** | Julia (`.jl`) | [Lecture 8](pdfs/lecture08.pdf) | [`advection_beam_warming.jl`](code/advection_beam_warming.jl) |
 
 ---
 
