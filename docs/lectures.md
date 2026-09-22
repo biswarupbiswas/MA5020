@@ -12,3 +12,4 @@
 | **07** | 26-08-2026 | **Von Neumann Stability Analysis & Classical Schemes** | [Lecture 7 (PDF)](pdfs/lecture07.pdf) |
 | **08** | 02-09-2026 | **Modified Equation Analysis: Dissipation & Dispersion** | [Lecture 8 (PDF)](pdfs/lecture08.pdf) |
 | **09** | 02-09-2026 | **Conservative Schemes, Semi-Discretization & SSP Methods** | [Lecture 9 (PDF)](pdfs/lecture09.pdf) |
+| **10** | 22-09-2026 | **Finite Volume Method, Control Volumes & Godunov's Scheme** | [Lecture 10 (PDF)](pdfs/lecture10.pdf) |

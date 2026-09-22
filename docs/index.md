@@ -1,12 +1,13 @@
 # MA4110/MA5020 – Computational Methods for Fluid Flow
 ## 📢 Announcements <span class="update-badge">New updates</span>
+- **Sep 22, 2026**: [Lecture 10](pdfs/lecture10.pdf) (Finite Volume Methods, Space-Time Control Volumes, and Godunov's Scheme) notes have been uploaded.
 - **Sep 07, 2026**: [Tutorial Sheet 2](pdfs/tutorial02.pdf) (Finite Difference Methods, Von Neumann Stability & Modified Equations) has been uploaded.
-- **Sep 02, 2026**: 📌 **Minor I Exam** is scheduled for **September 16, 2026 at 4:30 PM**. Venue will be shared by the Exam Department.
+- **Sep 02, 2026**: 📌 **Minor I Exam** was conducted on **September 16, 2026**.
 - **Sep 02, 2026**: [Lecture 8](pdfs/lecture08.pdf) (Modified Equation Analysis: Dissipation & Dispersion) and [Lecture 9](pdfs/lecture09.pdf) (Conservative Difference Schemes, Lax-Wendroff Theorem & Method of Lines) notes have been uploaded.
-- **Aug 26, 2026**: [Lecture 6](pdfs/lecture06.pdf) (Finite Difference Foundations & Truncation Error) and [Lecture 7](pdfs/lecture07.pdf) (Von Neumann Stability Analysis & Classical Schemes) notes have been uploaded.
-- **Aug 20, 2026**: [Tutorial Sheet 1](pdfs/tutorial01.pdf) (PDE Classification, Method of Characteristics, and Breaking Time) has been uploaded.
 
 ??? note "Show more past announcements"
+    - **Aug 26, 2026**: [Lecture 6](pdfs/lecture06.pdf) (Finite Difference Foundations & Truncation Error) and [Lecture 7](pdfs/lecture07.pdf) (Von Neumann Stability Analysis & Classical Schemes) notes have been uploaded.
+    - **Aug 20, 2026**: [Tutorial Sheet 1](pdfs/tutorial01.pdf) (PDE Classification, Method of Characteristics, and Breaking Time) has been uploaded.
     - **Aug 19, 2026**: [Lecture 4](pdfs/lecture04.pdf) (Linear Characteristics) and [Lecture 5](pdfs/lecture05.pdf) (Non-linear Characteristics & Weak Solutions) notes have been uploaded.
     - **Aug 13, 2026**: [Lecture 3](pdfs/lecture03.pdf) (Classification of PDEs) notes have been uploaded.
     - **Aug 12, 2026**: [Lecture 1](pdfs/lecture01.pdf) (Continuity Equation) and [Lecture 2](pdfs/lecture02.pdf) (Euler & Navier-Stokes) notes have been uploaded.
