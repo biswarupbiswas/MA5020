@@ -15,6 +15,7 @@ This page provides standalone code implementations for the computational methods
 | **Linear Advection Equation: First-Order Upwind Scheme** | Julia (`.jl`) | [Lecture 6](pdfs/lecture06.pdf) / [Lecture 7](pdfs/lecture07.pdf) | [`advection_upwind.jl`](code/advection_upwind.jl) |
 | **Linear Advection Equation: Lax-Wendroff Scheme (2nd-Order Central)** | Julia (`.jl`) | [Lecture 7](pdfs/lecture07.pdf) / [Lecture 8](pdfs/lecture08.pdf) | [`advection_lax_wendroff.jl`](code/advection_lax_wendroff.jl) |
 | **Linear Advection Equation: Beam-Warming Scheme (2nd-Order Upwind)** | Julia (`.jl`) | [Lecture 8](pdfs/lecture08.pdf) | [`advection_beam_warming.jl`](code/advection_beam_warming.jl) |
+| **Burgers' Equation: Wrong Shock Position of a Non-Conservative Scheme** | Julia (`.jl`) | [Lecture 9](pdfs/lecture09.pdf) | [`burgers_nonconservative_shock.jl`](code/burgers_nonconservative_shock.jl) |
 
 ---
 
