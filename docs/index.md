@@ -1,5 +1,6 @@
 # MA4110/MA5020 – Computational Methods for Fluid Flow
 ## 📢 Announcements <span class="update-badge">New updates</span>
+- **Sep 25, 2026**: 📌 **Classroom change:** all lectures will now be held in **ELT4** (previously ELT7).
 - **Sep 22, 2026**: [Lecture 10](pdfs/lecture10.pdf) (Finite Volume Methods, Space-Time Control Volumes, and Godunov's Scheme) notes have been uploaded.
 - **Sep 07, 2026**: [Tutorial Sheet 2](pdfs/tutorial02.pdf) (Finite Difference Methods, Von Neumann Stability & Modified Equations) has been uploaded.
 - **Sep 02, 2026**: 📌 **Minor I Exam** was conducted on **September 16, 2026**.
@@ -23,9 +24,9 @@
 
 | Session Type | Day | Time | Venue |
 | :--- | :--- | :--- | :--- |
-| **Lecture** | Wednesday | 8:25 AM | ELT7 |
-| **Lecture** | Wednesday | 9:25 AM | ELT7 |
-| **Lecture** | Thursday | 8:25 AM | ELT7 |
+| **Lecture** | Wednesday | 8:25 AM | ELT4 |
+| **Lecture** | Wednesday | 9:25 AM | ELT4 |
+| **Lecture** | Thursday | 8:25 AM | ELT4 |
 
 ---
 ### 📝 Evaluation Scheme
