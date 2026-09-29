@@ -13,3 +13,4 @@
 | **08** | 02-09-2026 | **Modified Equation Analysis: Dissipation & Dispersion** | [Lecture 8 (PDF)](pdfs/lecture08.pdf) |
 | **09** | 02-09-2026 | **Conservative Schemes, Semi-Discretization & SSP Methods** | [Lecture 9 (PDF)](pdfs/lecture09.pdf) |
 | **10** | 22-09-2026 | **Finite Volume Method, Control Volumes & Godunov's Scheme** | [Lecture 10 (PDF)](pdfs/lecture10.pdf) |
+| **11** | 29-09-2026 | **MUSCL Reconstruction, Slope Limiters & Second-Order FV Schemes** | [Lecture 11 (PDF)](pdfs/lecture11.pdf) |

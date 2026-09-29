@@ -17,6 +17,7 @@ This page provides standalone code implementations for the computational methods
 | **Linear Advection Equation: Beam-Warming Scheme (2nd-Order Upwind)** | Julia (`.jl`) | [Lecture 8](pdfs/lecture08.pdf) | [`advection_beam_warming.jl`](code/advection_beam_warming.jl) |
 | **Burgers' Equation: Wrong Shock Position of a Non-Conservative Scheme** | Julia (`.jl`) | [Lecture 9](pdfs/lecture09.pdf) | [`burgers_nonconservative_shock.jl`](code/burgers_nonconservative_shock.jl) |
 | **Burgers' Equation: Godunov Finite Volume Scheme (vs Rusanov Flux)** | Julia (`.jl`) | [Lecture 10](pdfs/lecture10.pdf) | [`burgers_godunov.jl`](code/burgers_godunov.jl) |
+| **Burgers' Equation: Second-Order MUSCL Scheme with Slope Limiters (vs Godunov)** | Julia (`.jl`) | [Lecture 11](pdfs/lecture11.pdf) | [`burgers_muscl.jl`](code/burgers_muscl.jl) |
 
 ---
 
