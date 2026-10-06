@@ -18,6 +18,7 @@ This page provides standalone code implementations for the computational methods
 | **Burgers' Equation: Wrong Shock Position of a Non-Conservative Scheme** | Julia (`.jl`) | [Lecture 9](pdfs/lecture09.pdf) | [`burgers_nonconservative_shock.jl`](code/burgers_nonconservative_shock.jl) |
 | **Burgers' Equation: Godunov Finite Volume Scheme (vs Rusanov Flux)** | Julia (`.jl`) | [Lecture 10](pdfs/lecture10.pdf) | [`burgers_godunov.jl`](code/burgers_godunov.jl) |
 | **Burgers' Equation: Second-Order MUSCL Scheme with Slope Limiters (vs Godunov)** | Julia (`.jl`) | [Lecture 11](pdfs/lecture11.pdf) | [`burgers_muscl.jl`](code/burgers_muscl.jl) |
+| **Linear Advection Equation: TVD Flux-Limiter Schemes (Minmod, Superbee, Van Leer, MC)** | Julia (`.jl`) | [Lecture 12](pdfs/lecture12.pdf) | [`advection_flux_limiters.jl`](code/advection_flux_limiters.jl) |
 
 ---
 

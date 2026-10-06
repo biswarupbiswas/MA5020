@@ -14,3 +14,4 @@
 | **09** | 02-09-2026 | **Conservative Schemes, Semi-Discretization & SSP Methods** | [Lecture 9 (PDF)](pdfs/lecture09.pdf) |
 | **10** | 22-09-2026 | **Finite Volume Method, Control Volumes & Godunov's Scheme** | [Lecture 10 (PDF)](pdfs/lecture10.pdf) |
 | **11** | 29-09-2026 | **MUSCL Reconstruction, Slope Limiters & Second-Order FV Schemes** | [Lecture 11 (PDF)](pdfs/lecture11.pdf) |
+| **12** | 06-10-2026 | **TVD Schemes, Flux Limiters & SSP Time Stepping** | [Lecture 12 (PDF)](pdfs/lecture12.pdf) |
