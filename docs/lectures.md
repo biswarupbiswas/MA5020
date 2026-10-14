@@ -15,3 +15,4 @@
 | **10** | 22-09-2026 | **Finite Volume Method, Control Volumes & Godunov's Scheme** | [Lecture 10 (PDF)](pdfs/lecture10.pdf) |
 | **11** | 29-09-2026 | **MUSCL Reconstruction, Slope Limiters & Second-Order FV Schemes** | [Lecture 11 (PDF)](pdfs/lecture11.pdf) |
 | **12** | 06-10-2026 | **TVD Schemes, Flux Limiters & SSP Time Stepping** | [Lecture 12 (PDF)](pdfs/lecture12.pdf) |
+| **13** | 13-10-2026 | **ENO & WENO Schemes** | [Lecture 13 (PDF)](pdfs/lecture13.pdf) |
