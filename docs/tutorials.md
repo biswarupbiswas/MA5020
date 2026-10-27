@@ -4,6 +4,7 @@
 | :--- | :--- | :--- | :--- |
 | 1 | 20-08-2026 | **PDE Classification & Characteristics** | [Tutorial Sheet 1 (PDF)](pdfs/tutorial01.pdf) |
 | 2 | 07-09-2026 | **Finite Difference Methods, Stability & Modified Equations** | [Tutorial Sheet 2 (PDF)](pdfs/tutorial02.pdf) |
+| 3 | 27-10-2026 | **Conservative Schemes, Finite Volume, MUSCL, TVD & ENO** | [Tutorial Sheet 3 (PDF)](pdfs/tutorial03.pdf) |
 
 ---
 
