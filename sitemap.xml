@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://biswarupbiswas.github.io/MA5020/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-31</lastmod>
     </url>
     <url>
          <loc>https://biswarupbiswas.github.io/MA5020/assignments/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-31</lastmod>
     </url>
     <url>
          <loc>https://biswarupbiswas.github.io/MA5020/codes/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-31</lastmod>
+    </url>
+    <url>
+         <loc>https://biswarupbiswas.github.io/MA5020/exams/</loc>
+         <lastmod>2026-10-31</lastmod>
     </url>
     <url>
          <loc>https://biswarupbiswas.github.io/MA5020/julia/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-31</lastmod>
     </url>
     <url>
          <loc>https://biswarupbiswas.github.io/MA5020/lectures/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-31</lastmod>
     </url>
     <url>
          <loc>https://biswarupbiswas.github.io/MA5020/syllabus/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-31</lastmod>
     </url>
     <url>
          <loc>https://biswarupbiswas.github.io/MA5020/tutorials/</loc>
-         <lastmod>2026-10-27</lastmod>
+         <lastmod>2026-10-31</lastmod>
     </url>
 </urlset>
