@@ -1,13 +1,14 @@
 # MA4110/MA5020 – Computational Methods for Fluid Flow
 ## 📢 Announcements <span class="update-badge">New updates</span>
+- **Oct 31, 2026**: The [Minor I](pdfs/minor1.pdf) and [Minor II](pdfs/minor2.pdf) question papers are now available on the [Exams](exams.md) page.
 - **Oct 27, 2026**: [Tutorial Sheet 3](pdfs/tutorial03.pdf) (Conservative Schemes, Finite Volume, MUSCL, TVD and ENO; Lectures 9 to 13, excluding WENO) has been uploaded. Read the lecture notes alongside the sheet.
 - **Oct 13, 2026**: [Lecture 13](pdfs/lecture13.pdf) (ENO and WENO Schemes: Adaptive Stencils, Smoothness Indicators, and WENO5) notes and the [WENO5 code for linear advection](codes.md) have been uploaded.
 - **Oct 06, 2026**: [Lecture 12](pdfs/lecture12.pdf) (TVD Schemes, Harten's Lemma, Flux Limiters, and SSP Time Stepping) notes and the [flux-limiter code for linear advection](codes.md) have been uploaded.
-- **Sep 29, 2026**: [Lecture 11](pdfs/lecture11.pdf) (MUSCL Reconstruction, Slope Limiters, and Second-Order Finite Volume Schemes) notes and the [MUSCL code for Burgers' equation](codes.md) have been uploaded.
-- **Sep 25, 2026**: 📌 **Classroom change:** all lectures will now be held in **ELT4** (previously ELT7).
-- **Sep 22, 2026**: [Lecture 10](pdfs/lecture10.pdf) (Finite Volume Methods, Space-Time Control Volumes, and Godunov's Scheme) notes have been uploaded.
 
 ??? note "Show more past announcements"
+    - **Sep 29, 2026**: [Lecture 11](pdfs/lecture11.pdf) (MUSCL Reconstruction, Slope Limiters, and Second-Order Finite Volume Schemes) notes and the [MUSCL code for Burgers' equation](codes.md) have been uploaded.
+    - **Sep 25, 2026**: 📌 **Classroom change:** all lectures will now be held in **ELT4** (previously ELT7).
+    - **Sep 22, 2026**: [Lecture 10](pdfs/lecture10.pdf) (Finite Volume Methods, Space-Time Control Volumes, and Godunov's Scheme) notes have been uploaded.
     - **Sep 07, 2026**: [Tutorial Sheet 2](pdfs/tutorial02.pdf) (Finite Difference Methods, Von Neumann Stability & Modified Equations) has been uploaded.
     - **Sep 02, 2026**: 📌 **Minor I Exam** was conducted on **September 16, 2026**.
     - **Sep 02, 2026**: [Lecture 8](pdfs/lecture08.pdf) (Modified Equation Analysis: Dissipation & Dispersion) and [Lecture 9](pdfs/lecture09.pdf) (Conservative Difference Schemes, Lax-Wendroff Theorem & Method of Lines) notes have been uploaded.
