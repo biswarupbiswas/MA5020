@@ -1,11 +1,12 @@
 # MA4110/MA5020 – Computational Methods for Fluid Flow
 ## 📢 Announcements <span class="update-badge">New updates</span>
+- **Nov 18, 2026**: [Lecture 16](pdfs/lecture16.pdf) (The Euler Equations: Eigenvalues, the Sod Shock Tube, Rusanov, HLL and HLLC Solvers, and Boundary Conditions) notes, the [HLLC code for the Euler equations](codes.md) and the [symbolic eigenvalue code](codes.md) have been uploaded.
 - **Nov 18, 2026**: [Lecture 15](pdfs/lecture15.pdf) (Shallow Water Equations and Approximate Riemann Solvers: Rusanov, HLL and Roe) notes and the [shallow water solvers code](codes.md) have been uploaded.
 - **Nov 04, 2026**: [Lecture 14](pdfs/lecture14.pdf) (Linear Hyperbolic Systems: Hyperbolicity, Characteristic Variables, the Riemann Problem, and Godunov's Method for Systems) notes and the [Godunov code for linear acoustics](codes.md) have been uploaded.
 - **Oct 31, 2026**: The [Minor I](pdfs/minor1.pdf) and [Minor II](pdfs/minor2.pdf) question papers are now available on the [Exams](exams.md) page.
-- **Oct 27, 2026**: [Tutorial Sheet 3](pdfs/tutorial03.pdf) (Conservative Schemes, Finite Volume, MUSCL, TVD and ENO; Lectures 9 to 13, excluding WENO) has been uploaded. Read the lecture notes alongside the sheet.
 
 ??? note "Show more past announcements"
+    - **Oct 27, 2026**: [Tutorial Sheet 3](pdfs/tutorial03.pdf) (Conservative Schemes, Finite Volume, MUSCL, TVD and ENO; Lectures 9 to 13, excluding WENO) has been uploaded. Read the lecture notes alongside the sheet.
     - **Oct 13, 2026**: [Lecture 13](pdfs/lecture13.pdf) (ENO and WENO Schemes: Adaptive Stencils, Smoothness Indicators, and WENO5) notes and the [WENO5 code for linear advection](codes.md) have been uploaded.
     - **Oct 06, 2026**: [Lecture 12](pdfs/lecture12.pdf) (TVD Schemes, Harten's Lemma, Flux Limiters, and SSP Time Stepping) notes and the [flux-limiter code for linear advection](codes.md) have been uploaded.
     - **Sep 29, 2026**: [Lecture 11](pdfs/lecture11.pdf) (MUSCL Reconstruction, Slope Limiters, and Second-Order Finite Volume Schemes) notes and the [MUSCL code for Burgers' equation](codes.md) have been uploaded.

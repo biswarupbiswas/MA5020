@@ -18,3 +18,4 @@
 | **13** | 13-10-2026 | **ENO & WENO Schemes** | [Lecture 13 (PDF)](pdfs/lecture13.pdf) |
 | **14** | 04-11-2026 | **Linear Hyperbolic Systems & the Riemann Problem** | [Lecture 14 (PDF)](pdfs/lecture14.pdf) |
 | **15** | 18-11-2026 | **Shallow Water Equations & Approximate Riemann Solvers** | [Lecture 15 (PDF)](pdfs/lecture15.pdf) |
+| **16** | 19-11-2026 | **The Euler Equations: HLLC Solver & Boundary Conditions** | [Lecture 16 (PDF)](pdfs/lecture16.pdf) |

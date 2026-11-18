@@ -22,6 +22,8 @@ This page provides standalone code implementations for the computational methods
 | **Linear Advection Equation: ENO3 and WENO5 Reconstruction with SSP-RK3 (vs MUSCL-Minmod)** | Julia (`.jl`) | [Lecture 13](pdfs/lecture13.pdf) | [`advection_weno5.jl`](code/advection_weno5.jl) |
 | **Linear Acoustics System: Godunov (Characteristic Upwind) Flux vs Rusanov Flux for the Riemann Problem** | Julia (`.jl`) | [Lecture 14](pdfs/lecture14.pdf) | [`acoustics_godunov.jl`](code/acoustics_godunov.jl) |
 | **Shallow Water Dam Break: Rusanov, HLL and Roe Approximate Riemann Solvers vs the Exact Solution** | Julia (`.jl`) | [Lecture 15](pdfs/lecture15.pdf) | [`shallow_water_solvers.jl`](code/shallow_water_solvers.jl) |
+| **Euler Equations (Sod Shock Tube and Wall Reflection): Rusanov, HLL and HLLC Solvers** | Julia (`.jl`) | [Lecture 16](pdfs/lecture16.pdf) | [`euler_hllc.jl`](code/euler_hllc.jl) |
+| **Euler Equations: Symbolic Eigenvalues and Eigenvectors of the Flux Jacobian (SymPy)** | Julia (`.jl`) | [Lecture 16](pdfs/lecture16.pdf) | [`euler_eigen_symbolic.jl`](code/euler_eigen_symbolic.jl) |
 
 ---
 
