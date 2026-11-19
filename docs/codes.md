@@ -24,6 +24,8 @@ This page provides standalone code implementations for the computational methods
 | **Shallow Water Dam Break: Rusanov, HLL and Roe Approximate Riemann Solvers vs the Exact Solution** | Julia (`.jl`) | [Lecture 15](pdfs/lecture15.pdf) | [`shallow_water_solvers.jl`](code/shallow_water_solvers.jl) |
 | **Euler Equations (Sod Shock Tube and Wall Reflection): Rusanov, HLL and HLLC Solvers** | Julia (`.jl`) | [Lecture 16](pdfs/lecture16.pdf) | [`euler_hllc.jl`](code/euler_hllc.jl) |
 | **Euler Equations: Symbolic Eigenvalues and Eigenvectors of the Flux Jacobian (SymPy)** | Julia (`.jl`) | [Lecture 16](pdfs/lecture16.pdf) | [`euler_eigen_symbolic.jl`](code/euler_eigen_symbolic.jl) |
+| **2D Euler Equations: 2D Riemann Problem and Isentropic Vortex with Rusanov and HLLC (Dimensional Splitting)** | Julia (`.jl`) | [Lecture 17](pdfs/lecture17.pdf) | [`euler2d_solvers.jl`](code/euler2d_solvers.jl) |
+| **2D Linear Advection: Unsplit vs Dimensionally Split Donor Cell Scheme** | Julia (`.jl`) | [Lecture 17](pdfs/lecture17.pdf) | [`advection2d_splitting.jl`](code/advection2d_splitting.jl) |
 
 ---
 
